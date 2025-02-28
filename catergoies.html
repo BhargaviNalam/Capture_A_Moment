@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capture A Monmet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        #butt {
+            margin: 10px 0px 10px 20px;
+        }
+
+        #heading {
+            margin: 10px 20px;
+        }
+
+        .cat {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* Center align */
+            gap: 50px;
+            /* Space between buttons */
+            margin: 80px -20px 35px -20px;
+            /* Avoid overlap with navbar */
+            padding: 20px;
+        }
+
+        .cat button {
+            width: 150px;
+            height: 45px;
+            border: 1px solid black;
+            background-color: transparent;
+            font-size: 16px;
+        }
+
+        .img1 {
+            display: flex;
+            margin: 0px 0px 25px 0px;
+        }
+
+        .img2 {
+            display: flex;
+            margin: 0px 0px 25px 0px;
+        }
+
+        .img3 {
+            display: flex;
+        }
+
+        .imgs {
+            margin: 0px 20px 15px 30px;
+
+        }
+
+        .imgs img {
+            margin: 0px 15px;
+            width: 400px;
+            height: 300px;
+            border-radius: 8px;
+            transition: 0.3s ease-in-out;
+        }
+
+        .imgs img:hover {
+            filter: brightness(70%);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transform: scale(1.05);
+        }
+
+        .mb-4 {
+            display: flex;
+            margin: 0px 400px;
+        }
+
+        .mb-4 img {
+            width: 60px;
+            height: 50px;
+        }
+
+        .view-more {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, 0.8);
+            color: black;
+            padding: 10px 15px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 5px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light fixed-top">
+        <div class="container-fluid!important">
+            <button id="butt" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#" id="heading">Capture A Moment</a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="register.html">SignUp</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="cat">
+        <a href="portrait.html"><button type="button" class="btn btn-outline-secondary">Portrait </button></a>
+        <a href="fullbody.html"><button type="button" class="btn btn-outline-secondary">Full-boby</button></a>
+        <a href="solo.html"><button type="button" class="btn btn-outline-secondary">Solo poses</button></a>
+        <a href="group.html"><button type="button" class="btn btn-outline-secondary">Group Poses </button></a>
+        <a href="themed.html"><button type="button" class="btn btn-outline-secondary">Themed poses</button></a>
+        <a href=""><button type="button" class="btn btn-outline-secondary">Camera Angles</button></a>
+    </div>
+
+    <div class="imgs">
+        <div class="img1">
+            <div class="i1">
+                <img src="https://janelleandco.com/wp-content/uploads/2021/03/10weddingposesforcouples_01.jpg" alt="">
+                <div class="view-more">View More</div>
+            </div>
+            <div class="i2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH7dEdoGPvFeI-7az4mieQPyGXnDCcU5Z-2Q&s"
+                    alt="">
+                <div class="view-more">View More</div>
+            </div>
+            <div class="i3">
+                <img src="https://img.freepik.com/premium-photo/casual-beauty-full-length-attractive-young-woman-casual-wear-posing_425904-21714.jpg"
+                    alt="">
+                <div class="view-more">View More</div>
+            </div>
+        </div>
+        <div class="img2">
+            <div class="i4">
+                <img src="https://images.squarespace-cdn.com/content/v1/589f442da5790a7c3fb5b2ad/1705277476236-MAVD73LNFPYGF5SN8ILP/Zion-National-Park-Destination-Wedding-Lazalu-48.jpg"
+                    alt="">
+                <div class="view-more">View More</div>
+            </div>
+            <div class="i5">
+                <img src="https://static.vecteezy.com/system/resources/previews/001/905/011/large_2x/young-woman-poses-with-retro-film-camera-free-photo.jpg"
+                    alt="">
+                <div class="view-more">View More</div>
+            </div>
+            <div class="i6">
+                <img src="https://cdn.shopify.com/s/files/1/0163/6622/files/Top_30_Group_Photo_Poses_zig_zag.jpg?v=1696630380"
+                    alt="">
+                <div class="view-more">View More</div>
+            </div>
+        </div>
+        <div class="img3">
+            <div class="i7">
+                <img src="https://i.pinimg.com/736x/89/27/a8/8927a871476f30f7146508de4bea7bd2.jpg" alt="">
+                <div class="view-more">View More</div>
+            </div>
+            <div class="i8">
+                <img src="https://littleleapling.com/wp-content/uploads/sites/17281/2022/01/posing-cousins-1024x683.jpg"
+                    alt="">
+                <div class="view-more">View More</div>
+            </div>
+            <div class="i9">
+                <img src="https://media.istockphoto.com/id/636032262/photo/group-of-young-men.jpg?s=612x612&w=0&k=20&c=5RsWB-dCnj60w4EC64VzwG_3HVaqH3wk2RFpzTzKMvo="
+                    alt="">
+                <div class="view-more">View More</div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center bg-body-tertiary">
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxhtnyrLl1djITLJP8l95AbM0u-qcVTI8oug&s"
+                    alt="">
+                <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt="">
+                <img src="https://i.pinimg.com/736x/4b/4c/65/4b4c65ff36e318bc177d7766cfd18d2a.jpg" alt="">
+                <img src="https://c.files.bbci.co.uk/C5CC/production/_89663605_instagram_logo_976.jpg" alt="">
+                <img src="https://static.vecteezy.com/system/resources/previews/023/986/704/non_2x/youtube-logo-youtube-logo-transparent-youtube-icon-transparent-free-free-png.png"
+                    alt="">
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2020 Copyright:
+            <a class="text-body" style="text-decoration: none;">Capturemoment.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>
+
+</html>

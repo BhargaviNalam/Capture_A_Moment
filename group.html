@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capture A Monment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        #heading {
+            margin: 10px 20px;
+        }
+
+        #butt {
+            margin: 10px 0px 10px 20px;
+        }
+
+        .cat {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* Center align */
+            gap: 20px;
+            /* Space between buttons */
+            margin: 90px -20px 35px -20px;
+            /* Avoid overlap with navbar */
+            /* padding: 20px; */
+        }
+
+        .cat button {
+            width: 120px;
+            height: 45px;
+            border: 1px solid black;
+            background-color: transparent;
+            font-size: 15px;
+        }
+
+        .next {
+            display: flex;
+        }
+
+        .next p #b {
+            margin: 30px 0px 0px 0px;
+        }
+
+        .next h2 {
+            font-size: 25px;
+            font-weight: 400;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 5px 30px 15px 30px;
+        }
+
+        .next p {
+            margin: 30px 30px;
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 10px 30px;
+            width: 150px;
+            font-size: 18px;
+            background-color: rgb(109, 99, 99);
+            color: aliceblue;
+        }
+
+        .next #b {
+            margin: 30px 30px;
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 10px 30px;
+            width: 170px;
+            font-size: 18px;
+            background-color: rgb(109, 99, 99);
+            color: aliceblue;
+        }
+
+        .img1 {
+            display: flex;
+        }
+
+        .img1 img {
+            width: 400px;
+            height: 320px;
+            border-radius: 8px;
+            margin: 10px 15px 10px 25px;
+        }
+
+        .img2 {
+            display: flex;
+        }
+
+        .img2 img {
+            width: 400px;
+            height: 320px;
+            border-radius: 8px;
+            margin: 30px 15px 10px 25px;
+        }
+
+        .img3 {
+            display: flex;
+        }
+
+        .img3 img {
+            width: 400px;
+            height: 320px;
+            border-radius: 8px;
+            margin: 30px 15px 10px 25px;
+        }
+
+        .head {
+            display: flex;
+            margin: 40px 0px 0px -320px;
+        }
+
+        .img4 {
+            display: flex;
+        }
+
+        .img4 img {
+            width: 400px;
+            height: 320px;
+            border-radius: 8px;
+            margin: 30px 15px 10px 25px;
+        }
+        .img5 {
+            display: flex;
+        }
+
+        .img5 img {
+            width: 400px;
+            height: 320px;
+            border-radius: 8px;
+            margin: 30px 15px 10px 25px;
+        }
+        .mb-4 {
+            display: flex;
+            margin: 0px 400px;
+        }
+
+        .mb-4 img {
+            width: 60px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light fixed-top">
+        <div class="container-fluid!important">
+            <button id="butt" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#" id="heading">Capture A Moment</a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="register.html">SignUp</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="cat">
+        <a href="catergoies.html"><button type="button" class="btn btn-outline-secondary">× Group </button></a>
+        <a href="#fun"><button type="button" class="btn btn-outline-secondary">Fun</button></a>
+        <a href="#friends"><button type="button" class="btn btn-outline-secondary">Friends</button></a>
+        <a href="#family"><button type="button" class="btn btn-outline-secondary">Family</button></a>
+        <a href="#Graduation"><button type="button" class="btn btn-outline-secondary">Graduation</button></a>
+        <a href="#Trips"><button type="button" class="btn btn-outline-secondary">Trips</button></a>
+    </div>
+    <div class="next">
+        <h2>Strike a pose, own the moment</h2>
+        <div class="head">
+            <p>Photos >></p>
+            <p id="b">200+ Views</p>
+        </div>
+    </div>
+
+    <div class="imgs">
+        <div class="img1" id="fun">
+            <img src="https://media.greatbigphotographyworld.com/wp-content/uploads/2022/04/group-poses.jpg"
+                alt="">
+            <img src="https://assets.hongkiat.com/uploads/great-ideas-for-group-photography/group-photo-03.jpg"
+                alt="">
+            <img src="https://thumbs.dreamstime.com/b/group-young-teenagers-holding-hands-together-happy-caucasian-modern-clothes-image-taken-light-blue-30858408.jpg"
+                alt="">
+        </div>
+        <div class="img2" id="friends">
+            <img src="https://cdn.shopify.com/s/files/1/1619/4221/files/1_Photo_by_Omar_Lopez_on_Unsplash.jpg?v=1655447031" alt="">
+            <img src="https://www.melissajill.com/images/content/Focusing_Group_Portraits_071.jpg" alt="">
+            <img src="https://i.pinimg.com/736x/24/ba/e7/24bae7cc97d8844bdd0cf97811e2b175.jpg" alt=""
+                height="420px">
+        </div>
+        <div class="img3" id="family">
+            <img src="https://cdn.retouchme.com/blogs/101-1657801536-lg.webp"
+                alt="">
+            <img src="https://www.kristendukephotography.com/wp-content/uploads/2019/03/group-prom-pictures.jpg" alt="">
+            <img src="https://www.kristendukephotography.com/wp-content/uploads/2019/03/prom-picture-ideas-group.jpg"
+                alt="">
+        </div>
+        <div class="img4" id="Graduation">
+            <img src="https://www.format.com/wp-content/uploads/Graduation_Group.jpg.jpg"
+                alt="">
+            <img src="https://media.istockphoto.com/id/485776945/photo/group-of-diverse-international-students-celebrating-graduation.jpg?s=612x612&w=0&k=20&c=ngmK2pZov4a5FZTCSaOWwX6pL2rL9fTsaSzwwY7QS6I="
+                alt="">
+            <img src="https://media.istockphoto.com/id/484741611/photo/group-of-diverse-international-students-celebrating-graduation.jpg?s=612x612&w=0&k=20&c=rq6gWCf2scTq_fbvJwSYrL0pC8AfYuV7WDuvRmUmqz0="
+                alt="">
+        </div>
+        <div class="img5" id="Trips">
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JvdXAlMjB0cmF2ZWx8ZW58MHx8MHx8fDA%3D"
+                alt="">
+            <img src="https://i2.wp.com/blog.purpletravel.co.uk/wp-content/uploads/2016/05/group-holidays.jpg"
+                alt="">
+            <img src="https://media.istockphoto.com/id/473428676/photo/group-of-friends-on-walk-through-countryside-together.jpg?s=612x612&w=0&k=20&c=cXCeRNzt_P5FAQYgRXfYK9bBqA-W8XN0tbYO7C8FbL8="
+                alt="">
+        </div>
+    </div>
+    <div class="footer">
+        <footer class="text-center bg-body-tertiary">
+            <!-- Grid container -->
+            <div class="container pt-4">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxhtnyrLl1djITLJP8l95AbM0u-qcVTI8oug&s"
+                        alt="">
+                    <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt="">
+                    <img src="https://i.pinimg.com/736x/4b/4c/65/4b4c65ff36e318bc177d7766cfd18d2a.jpg" alt="">
+                    <img src="https://c.files.bbci.co.uk/C5CC/production/_89663605_instagram_logo_976.jpg" alt="">
+                    <img src="https://static.vecteezy.com/system/resources/previews/023/986/704/non_2x/youtube-logo-youtube-logo-transparent-youtube-icon-transparent-free-free-png.png"
+                        alt="">
+                </section>
+                <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2020 Copyright:
+                <a class="text-body" style="text-decoration: none;">Capturemoment.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </div>
+</body>
+
+</html>
